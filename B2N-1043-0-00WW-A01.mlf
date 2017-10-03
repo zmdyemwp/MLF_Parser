@@ -1,0 +1,388 @@
+[Package Download Profile]
+PROFILE_VER = 1.0
+MLF_VER = 1.0
+PROJECT = "B2N"
+PLATFORM = "Q9"
+PACKAGE_NUMBER = 58
+INITOPTION = 0x20000
+INITDLTYPE = 0x60
+SECURITY_VER = 0x0001
+STORAGE = eMMC
+BOOTLOADER_PART_NAME=xbl_a, abl_a, xbl_b, abl_b
+BOOTLOADER_PART_EXT=elf
+
+[Package Info Main]
+FIREHOSE_IMG = "B2N-0-1043-prog_emmc_ufs_firehose_Sdm660_ddr.elf"
+RAWPROGRAM0_XML = "B2N-0-1043-rawprogram0.xml"
+PATCH0_XML = "B2N-0-1043-patch0.xml"
+GPT_MAIN_IMG = "B2N-0-1043-gpt_main0.bin"
+GPT_BACKUP0_IMG = "B2N-0-1043-gpt_backup0.bin"
+XBL_IMG = "B2N-0-1043-xbl.elf"
+ABL_IMG = "B2N-0-1043-abl.elf"
+RPM_IMG = "B2N-0-1043-rpm.mbn"
+TZ_IMG = "B2N-0-1043-tz.mbn"
+HYP_IMG = "B2N-0-1043-hyp.mbn"
+PMIC_IMG = "B2N-0-1043-pmic.elf"
+KEY_MASTER_IMG = "B2N-0-1043-keymaster.mbn"
+CMNLIB_IMG = "B2N-0-1043-cmnlib.mbn"
+CMNLIB64_IMG = "B2N-0-1043-cmnlib64.mbn"
+MDTPSECAPP_IMG = "B2N-0-1043-mdtpsecapp.mbn"
+STORESEC_IMG = "B2N-0-1043-storsec.mbn"
+SEC_IMG = "B2N-0-1043-sec.dat"
+DEVCFG_IMG = "B2N-0-1043-devcfg.mbn"
+BOOTLOADER_COMMERCIAL_IMG0 = "B2N-0-1043-abl.elf"
+BOOTLOADER_COMMERCIAL_IMG1 = "B2N-0-1043-xbl.elf"
+BOOTLOADER_SERVICE_IMG0 = "B2N-0-1043-abl_service.elf"
+BOOTLOADER_SERVICE_ZIP0 = "B2N-0-1043-abl_service.zip"
+BOOTLOADER_SERVICE_IMG1 = "B2N-0-1043-xbl_service.elf"
+BOOTLOADER_SERVICE_ZIP1 = "B2N-0-1043-xbl_service.zip"
+
+[Package Info 1]
+PACKAGE_NAME = "oem dm-verity"
+BOOT_NAME = "oem dm-verity"
+OPTION = 0x1000000000000004
+IMAGE_FILE = ""
+
+[Package Info 2]
+PACKAGE_NAME = "partition"
+BOOT_NAME = "partition"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-gpt_both0.bin"
+
+[Package Info 3]
+PACKAGE_NAME = "xbl_a"
+BOOT_NAME = "xbl_a"
+OPTION = 0x100000
+IMAGE_FILE = "B2N-0-1043-xbl_service.elf"
+
+[Package Info 4]
+PACKAGE_NAME = "xbl_b"
+BOOT_NAME = "xbl_b"
+OPTION = 0x100000
+IMAGE_FILE = "B2N-0-1043-xbl_service.elf"
+
+[Package Info 5]
+PACKAGE_NAME = "xbl_a"
+BOOT_NAME = "xbl_a"
+OPTION = 0x200000
+IMAGE_FILE = "B2N-0-1043-xbl_service.zip"
+
+[Package Info 6]
+PACKAGE_NAME = "xbl_b"
+BOOT_NAME = "xbl_b"
+OPTION = 0x200000
+IMAGE_FILE = "B2N-0-1043-xbl_service.zip"
+
+[Package Info 7]
+PACKAGE_NAME = "abl_a"
+BOOT_NAME = "abl_a"
+OPTION = 0x100000
+IMAGE_FILE = "B2N-0-1043-abl_service.elf"
+
+[Package Info 8]
+PACKAGE_NAME = "abl_b"
+BOOT_NAME = "abl_b"
+OPTION = 0x100000
+IMAGE_FILE = "B2N-0-1043-abl_service.elf"
+
+[Package Info 9]
+PACKAGE_NAME = "abl_a"
+BOOT_NAME = "abl_a"
+OPTION = 0x200000
+IMAGE_FILE = "B2N-0-1043-abl_service.zip"
+
+[Package Info 10]
+PACKAGE_NAME = "abl_b"
+BOOT_NAME = "abl_b"
+OPTION = 0x200000
+IMAGE_FILE = "B2N-0-1043-abl_service.zip"
+
+[Package Info 11]
+PACKAGE_NAME = "tz_a"
+BOOT_NAME = "tz_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-tz.mbn"
+
+[Package Info 12]
+PACKAGE_NAME = "rpm_a"
+BOOT_NAME = "rpm_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-rpm.mbn"
+
+[Package Info 13]
+PACKAGE_NAME = "hwcfg"
+BOOT_NAME = "hwcfg"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-hwcfg.img"
+
+[Package Info 14]
+PACKAGE_NAME = "hyp_a"
+BOOT_NAME = "hyp_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-hyp.mbn"
+
+[Package Info 15]
+PACKAGE_NAME = "pmic_a"
+BOOT_NAME = "pmic_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-pmic.elf"
+
+[Package Info 16]
+PACKAGE_NAME = "keymaster_a"
+BOOT_NAME = "keymaster_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-keymaster.mbn"
+
+[Package Info 17]
+PACKAGE_NAME = "cmnlib_a"
+BOOT_NAME = "cmnlib_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-cmnlib.mbn"
+
+[Package Info 18]
+PACKAGE_NAME = "cmnlib64_a"
+BOOT_NAME = "cmnlib64_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-cmnlib64.mbn"
+
+[Package Info 19]
+PACKAGE_NAME = "dsp_a"
+BOOT_NAME = "dsp_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-dspso.bin"
+
+[Package Info 20]
+PACKAGE_NAME = "devcfg_a"
+BOOT_NAME = "devcfg_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-devcfg.mbn"
+
+[Package Info 21]
+PACKAGE_NAME = "sec"
+BOOT_NAME = "sec"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-sec.dat"
+
+[Package Info 22]
+PACKAGE_NAME = "mdtpsecapp_a"
+BOOT_NAME = "mdtpsecapp_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-mdtpsecapp.mbn"
+
+[Package Info 23]
+PACKAGE_NAME = "storsec"
+BOOT_NAME = "storsec"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-storsec.mbn"
+
+[Package Info 24]
+PACKAGE_NAME = "systeminfo_a"
+BOOT_NAME = "systeminfo_a"
+OPTION = 0x2
+IMAGE_FILE = "systeminfo.img"
+
+[Package Info 25]
+PACKAGE_NAME = "reboot-bootloader"
+BOOT_NAME = "reboot-bootloader"
+OPTION = 0x1000000000000000
+IMAGE_FILE = ""
+
+[Package Info 26]
+PACKAGE_NAME = "oem dm-verity"
+BOOT_NAME = "oem dm-verity"
+OPTION = 0x1000000000000004
+IMAGE_FILE = ""
+
+[Package Info 27]
+PACKAGE_NAME = "modem_a"
+BOOT_NAME = "modem_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-1-1043-NON-HLOS.bin"
+
+[Package Info 28]
+PACKAGE_NAME = "mdtp_a"
+BOOT_NAME = "mdtp_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-00WW-mdtp.img"
+
+[Package Info 29]
+PACKAGE_NAME = "boot_a"
+BOOT_NAME = "boot_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-00WW-boot.img"
+
+[Package Info 30]
+PACKAGE_NAME = "boot_b"
+BOOT_NAME = "boot_b"
+OPTION = 0x4
+IMAGE_FILE = ""
+
+[Package Info 31]
+PACKAGE_NAME = "system_a"
+BOOT_NAME = "system_a"
+OPTION = 0x40000
+IMAGE_FILE = "B2N-0-1043-00WW-system.img"
+
+[Package Info 32]
+PACKAGE_NAME = "system_b"
+BOOT_NAME = "system_b"
+OPTION = 0x40000
+IMAGE_FILE = "B2N-0-1043-00WW-system_other.img"
+
+[Package Info 33]
+PACKAGE_NAME = "bluetooth_a"
+BOOT_NAME = "bluetooth_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-BTFM.bin"
+
+[Package Info 34]
+PACKAGE_NAME = "persist"
+BOOT_NAME = "persist"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-00WW-persist.img"
+
+[Package Info 35]
+PACKAGE_NAME = "userdata"
+BOOT_NAME = "userdata"
+OPTION = 0x8
+IMAGE_FILE = ""
+
+[Package Info 36]
+PACKAGE_NAME = "sutinfo"
+BOOT_NAME = "sutinfo"
+OPTION = 0x2
+IMAGE_FILE = "B2N-00WW-001-sutinfo.img"
+
+[Package Info 37]
+PACKAGE_NAME = "nvdef_a"
+BOOT_NAME = "nvdef_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-NV-default.mbn"
+
+[Package Info 38]
+PACKAGE_NAME = "hidden_a"
+BOOT_NAME = "hidden_a"
+OPTION = 0x2
+IMAGE_FILE = "C1N-0-0020-0001-hidden.img.ext4"
+
+[Package Info 39]
+PACKAGE_NAME = "cda_a"
+BOOT_NAME = "cda_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-00WW-005-cda.img"
+
+[Package Info 40]
+PACKAGE_NAME = "ssd"
+BOOT_NAME = "ssd"
+OPTION = 0x8
+IMAGE_FILE = ""
+
+[Package Info 41]
+PACKAGE_NAME = "misc"
+BOOT_NAME = "misc"
+OPTION = 0x8
+IMAGE_FILE = ""
+
+[Package Info 42]
+PACKAGE_NAME = "sti"
+BOOT_NAME = "sti"
+OPTION = 0x8
+IMAGE_FILE = ""
+
+[Package Info 43]
+PACKAGE_NAME = "splash_a"
+BOOT_NAME = "splash_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-00WW-005-splash.img"
+
+[Package Info 44]
+PACKAGE_NAME = "splash2"
+BOOT_NAME = "splash2"
+OPTION =
+IMAGE_FILE = ""
+
+[Package Info 45]
+PACKAGE_NAME = "ddr"
+BOOT_NAME = "ddr"
+OPTION = 0x4
+IMAGE_FILE = ""
+
+[Package Info 46]
+PACKAGE_NAME = "securefs"
+BOOT_NAME = "securefs"
+OPTION = 0x800
+IMAGE_FILE = ""
+
+[Package Info 47]
+PACKAGE_NAME = "KEY_INFO"
+BOOT_NAME = "KEY_INFO"
+OPTION = 0x1
+IMAGE_FILE = "B2N-00WW-003-keyinfo.img"
+
+[Package Info 48]
+PACKAGE_NAME = "box"
+BOOT_NAME = "box"
+OPTION = 0x1
+IMAGE_FILE = ""
+
+[Package Info 49]
+PACKAGE_NAME = "vendor_a"
+BOOT_NAME = "vendor_a"
+OPTION = 0x40000
+IMAGE_FILE = "B2N-0-1043-00WW-vendor.img"
+
+[Package Info 50]
+PACKAGE_NAME = "xbl_a"
+BOOT_NAME = "xbl_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-xbl.elf"
+
+[Package Info 51]
+PACKAGE_NAME = "xbl_b"
+BOOT_NAME = "xbl_b"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-xbl.elf"
+
+[Package Info 52]
+PACKAGE_NAME = "abl_a"
+BOOT_NAME = "abl_a"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-abl.elf"
+
+[Package Info 53]
+PACKAGE_NAME = "abl_b"
+BOOT_NAME = "abl_b"
+OPTION = 0x2
+IMAGE_FILE = "B2N-0-1043-abl.elf"
+
+[Package Info 54]
+PACKAGE_NAME = "oem set_active _a"
+BOOT_NAME = "oem set_active _a"
+OPTION = 0x1000000000000000
+IMAGE_FILE = ""
+
+[Package Info 55]
+PACKAGE_NAME = "oem enable-charger-screen"
+BOOT_NAME = "oem enable-charger-screen"
+OPTION = 0x1000000000000000
+IMAGE_FILE = ""
+
+[Package Info 56]
+PACKAGE_NAME = "cda"
+BOOT_NAME = "cda"
+OPTION = 0x1
+IMAGE_FILE = ""
+
+[Package Info 57]
+PACKAGE_NAME = "ftmboot"
+BOOT_NAME = "ftmboot"
+OPTION = 0x1
+IMAGE_FILE = "B2N-0-0090-ftm.img"
+
+[Package Info 58]
+PACKAGE_NAME = "md4"
+BOOT_NAME = "md4"
+OPTION = 0x2
+TIMEOUT = 360000
+IMAGE_FILE = "md4.dat"
+
